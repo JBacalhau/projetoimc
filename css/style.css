@@ -74,6 +74,17 @@ body {
   display: none;
   border-radius: 30px;
 }
+@media (max-width: 860px) {
+  .container-imc {
+    width: 90%;
+  }
+  .container-imc .image {
+    display: none;
+  }
+  .container-imc .content {
+    width: 100%;
+  }
+}
 
 .info {
   background-color: #FF3131;
@@ -101,4 +112,11 @@ body {
 }
 .info button:hover {
   background-color: #e44b04;
+}
+@media (max-width: 860px) {
+  .info {
+    flex-direction: column;
+    row-gap: 10px;
+    box-sizing: border-box;
+  }
 }/*# sourceMappingURL=style.css.map */

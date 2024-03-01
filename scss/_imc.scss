@@ -54,4 +54,18 @@
             border-radius: 30px;
         }
     }
+
+    @media (max-width: 860px){
+        width: 90%;
+
+        .image{
+            display: none;
+        }
+
+        .content{
+            width: 100%;
+        }
+    }
+
+
 }
