@@ -1,0 +1,57 @@
+.container-imc {
+    background-color: #c2b1b1a6;
+    backdrop-filter: blur(10px);
+    width: 800px;
+    padding: 4.375rem 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+
+    .image {
+        width: 50%;
+        text-align: center;
+    }
+
+    .content { 
+        width: 50%;
+        color: $text;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        
+        h1 {
+            color: $title-text;
+            font-size: 2rem;
+            margin-top: 2.1875rem;
+        }
+
+        form {
+            margin-top: 1.5625rem;
+            display: flex;
+            flex-direction: column;
+
+
+            input {
+                height: 1.875rem;
+                //box-sizing: border-box; serve para compatilisar a borda + pading
+                border: solid 1px #cccccc;
+                border-radius: 3px;
+                margin-bottom: .625rem;
+            }
+
+            button {
+                @include botao(); //Chamando  mixin botão
+                
+            }
+        }
+
+        #result{
+            text-align: center;
+            margin-top: 10px;
+            color: white;
+            padding: 5px;
+            display: none;
+            border-radius: 30px;
+        }
+    }
+}

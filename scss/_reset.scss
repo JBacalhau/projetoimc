@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+html {
+
+    font-size: 16px; // definindo a base de calculo do REM
+}
+
+body {
+    background-color: $brand-btn;
+    background-image: url(../img/backgroud.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
